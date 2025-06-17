@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejarah Indonesia</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/modal.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">SEJARAH INDONESIA</h1>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">Beranda</a>
+          <a href="#timeline" class="nav-link" data-scroll="timeline"
+            >Sejarah</a
+          >
+          <a href="perang.html" class="nav-link">Perang</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">MENELUSURI JEJAK<br />SEJARAH NUSANTARA</h2>
+        <button class="hero-btn">JELAJAHI SEKARANG</button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+        <!-- Timeline -->
+        <section class="timeline-section">
+          <h3 class="section-title">LINIMASA SEJARAH INDONESIA</h3>
+          <div class="timeline" id="timeline">
+            <!-- Timeline akan diisi oleh JavaScript -->
+          </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="articles-section">
+          <h3 class="section-title">ARTIKEL TERBARU</h3>
+          <div class="articles-grid" id="articles-grid"></div>
+        </section>
+
+        <!-- Video Section - TAMBAH setelah articles-section -->
+        <section class="video-section">
+          <h3 class="section-title">VIDEO DOKUMENTER SEJARAH</h3>
+          <div class="video-container">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/0xaTIQt6rTI"
+                title="Arsip Langka Proklamasi Kemerdekaan Indonesia 17 Agustus 1945 - Dokumentasi Visual Berwarna"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">
+                Arsip Langka Proklamasi Kemerdekaan Indonesia
+              </h4>
+              <p class="video-description">
+                Dokumentasi visual berwarna yang menampilkan momen bersejarah
+                Proklamasi Kemerdekaan Indonesia pada tanggal 17 Agustus 1945.
+                Video ini merupakan arsip langka yang memberikan gambaran
+                autentik tentang detik-detik kemerdekaan bangsa Indonesia.
+              </p>
+              <div class="video-meta">
+                <span class="video-category">Dokumenter Sejarah</span>
+                <span class="video-duration">📺 YouTube</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal untuk detail artikel -->
+    <div id="article-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div id="modal-image" class="modal-image"></div>
+          <div class="modal-info">
+            <div id="modal-meta" class="modal-meta"></div>
+            <div id="modal-content" class="modal-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+/* Modal Animations - UPDATED */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transition: all 0.3s ease;
+}
+
+.modal.show {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    background-color: #f5f1e8;
+    margin: 2% auto;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
+    /* Initial state - hidden */
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Alternative animations - pilih salah satu */
+
+/* Slide from top */
+.modal-content.slide-top {
+    transform: translateY(-100px) scale(1);
+}
+
+.modal.show .modal-content.slide-top {
+    transform: translateY(0) scale(1);
+}
+
+/* Slide from bottom */
+.modal-content.slide-bottom {
+    transform: translateY(100px) scale(1);
+}
+
+.modal.show .modal-content.slide-bottom {
+    transform: translateY(0) scale(1);
+}
+
+/* Scale animation */
+.modal-content.scale {
+    transform: scale(0.7);
+}
+
+.modal.show .modal-content.scale {
+    transform: scale(1);
+}
+
+/* Rotate + Scale animation */
+.modal-content.rotate-scale {
+    transform: scale(0.8) rotate(-5deg);
+}
+
+.modal.show .modal-content.rotate-scale {
+    transform: scale(1) rotate(0deg);
+}
+
+/* Modal header animation */
+.modal-header {
+    background-color: #d4c4a8;
+    padding: 1.5rem 2rem;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8b4513;
+    
+    /* Animation */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease 0.2s;
+}
+
+.modal.show .modal-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal body animation */
+.modal-body {
+    padding: 2rem;
+    
+    /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease 0.3s;
+}
+
+.modal.show .modal-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal image animation */
+.modal-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #d4c4a8;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    
+    /* Animation */
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease 0.4s;
+}
+
+.modal.show .modal-image {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Modal text animation */
+.modal-text {
+    color: #3d2914;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: justify;
+    
+    /* Animation */
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.5s ease 0.5s;
+}
+
+.modal.show .modal-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal meta animation */
+.modal-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d4c4a8;
+    
+    /* Animation */
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease 0.4s;
+}
+
+.modal.show .modal-meta {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Close button animation */
+.modal-close {
+    color: #8b4513;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    
+    /* Animation */
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8);
+    transition: all 0.4s ease 0.3s;
+}
+
+.modal.show .modal-close {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.modal-close:hover {
+    color: #a0522d;
+    background-color: rgba(139, 69, 19, 0.1);
+    transform: rotate(0deg) scale(1.1);
+}
+
+/* Loading animation untuk modal */
+.modal-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.modal-loading .loading {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #8b4513;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 5% auto;
+        width: 95%;
+        max-height: 85vh;
+    }
+    
+    .modal-header {
+        padding: 1rem 1.5rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .modal-image {
+        height: 200px;
+    }
+}
+@media (max-width: 480px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 98%;
+    }
+    
+    .modal-header {
+        padding: 1rem;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    .modal-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Modal accessibility */
+/* .modal-content:focus {
+    outline: none;
+}
+
+.modal-close:focus {
+    outline: 2px solid #8b4513;
+    outline-offset: 2px;
+} */

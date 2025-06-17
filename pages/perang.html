@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perang di Indonesia - Sejarah Indonesia</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/modal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">SEJARAH INDONESIA</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="index.html#timeline" class="nav-link">Sejarah</a>
+                <a href="perang.html" class="nav-link active">Perang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section untuk Page Perang -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">PERANG DI INDONESIA</h1>
+            <p class="page-hero-subtitle">Perjuangan dan Perlawanan Bangsa Indonesia</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h3 class="section-title">KATEGORI PERANG</h3>
+                <div class="filter-buttons" id="war-filters">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="perlawanan">Perlawanan Kolonial</button>
+                    <button class="filter-btn" data-filter="kemerdekaan">Perang Kemerdekaan</button>
+                    <button class="filter-btn" data-filter="regional">Konflik Regional</button>
+                </div>
+            </section>
+
+            <!-- Articles Section -->
+            <section class="articles-section">
+                <div class="articles-grid" id="war-articles-grid">
+                    <!-- Artikel perang akan diisi oleh JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal untuk detail artikel -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modal-image" class="modal-image"></div>
+                <div class="modal-info">
+                    <div id="modal-meta" class="modal-meta"></div>
+                    <div id="modal-content" class="modal-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/perang.js"></script>
+</body>
+</html>

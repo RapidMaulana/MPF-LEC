@@ -1,0 +1,111 @@
+{
+    "timeline": [
+      {
+        "id": 1,
+        "label": "Zaman Kuno",
+        "period": "Sebelum 1293",
+        "description": "Masa kerajaan-kerajaan Hindu-Buddha awal di Nusantara",
+        "active": false
+      },
+      {
+        "id": 2,
+        "label": "Kerajaan Majapahit",
+        "period": "1293-1527",
+        "description": "Kerajaan terbesar di Nusantara yang mencapai puncak kejayaan",
+        "active": true
+      },
+      {
+        "id": 3,
+        "label": "Kolonialisme",
+        "period": "1602-1945",
+        "description": "Masa penjajahan VOC, Belanda, dan Jepang di Indonesia",
+        "active": false
+      },
+      {
+        "id": 4,
+        "label": "Kemerdekaan",
+        "period": "1945-1998",
+        "description": "Masa kemerdekaan hingga berakhirnya Orde Baru",
+        "active": false
+      },
+      {
+        "id": 5,
+        "label": "Reformasi",
+        "period": "1998-sekarang",
+        "description": "Era reformasi dan demokratisasi Indonesia",
+        "active": false
+      }
+    ],
+    "articles": [
+      {
+        "id": 1,
+        "title": "PENDUDUKAN JEPANG DI INDONESIA",
+        "excerpt": "Masa pendudukan Jepang (1942-1945) membawa perubahan besar dalam sejarah Indonesia",
+        "content": "Pendudukan Jepang di Indonesia berlangsung dari tahun 1942 hingga 1945. Masa ini ditandai dengan berakhirnya kekuasaan kolonial Belanda dan dimulainya era baru yang akan membawa Indonesia menuju kemerdekaan.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2024-01-15",
+        "category": "Kolonialisme",
+        "author": "Dr. Sartono Kartodirdjo"
+      },
+      {
+        "id": 2,
+        "title": "KERAJAAN MAJAPAHIT",
+        "excerpt": "Kerajaan terbesar di Nusantara yang mencapai puncak kejayaan pada abad ke-14",
+        "content": "Kerajaan Majapahit adalah kerajaan Hindu-Buddha yang berdiri di Jawa Timur pada tahun 1293. Kerajaan ini mencapai puncak kejayaannya pada masa pemerintahan Hayam Wuruk dengan Mahapatih Gajah Mada.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2024-01-10",
+        "category": "Kerajaan Majapahit",
+        "author": "Prof. Slamet Muljana"
+      },
+      {
+        "id": 3,
+        "title": "PROKLAMASI KEMERDEKAAN",
+        "excerpt": "Detik-detik bersejarah proklamasi kemerdekaan Indonesia 17 Agustus 1945",
+        "content": "Proklamasi Kemerdekaan Indonesia dibacakan oleh Soekarno-Hatta pada tanggal 17 Agustus 1945 di Jalan Pegangsaan Timur 56, Jakarta. Peristiwa ini menandai berakhirnya masa penjajahan di Indonesia.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2024-01-05",
+        "category": "Kemerdekaan",
+        "author": "Prof. Taufik Abdullah"
+      },
+      {
+        "id": 4,
+        "title": "KERAJAAN SRIWIJAYA",
+        "excerpt": "Kerajaan maritim terbesar di Asia Tenggara pada abad ke-7 hingga ke-13",
+        "content": "Kerajaan Sriwijaya adalah kerajaan maritim yang berpusat di Palembang, Sumatera Selatan. Kerajaan ini menguasai jalur perdagangan maritim di Selat Malaka dan menjadi pusat pembelajaran agama Buddha.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2024-01-01",
+        "category": "Zaman Kuno",
+        "author": "Dr. Bambang Budi Utomo"
+      },
+      {
+        "id": 5,
+        "title": "PERANG DIPONEGORO",
+        "excerpt": "Perlawanan heroik Pangeran Diponegoro melawan kolonial Belanda (1825-1830)",
+        "content": "Perang Diponegoro atau Perang Jawa adalah perang terbesar yang pernah dialami Belanda di Jawa. Dipimpin oleh Pangeran Diponegoro, perang ini berlangsung dari 1825 hingga 1830.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2023-12-28",
+        "category": "Kolonialisme",
+        "author": "Dr. Peter Carey"
+      },
+      {
+        "id": 6,
+        "title": "KERAJAAN MATARAM ISLAM",
+        "excerpt": "Kerajaan Islam terbesar di Jawa yang didirikan oleh Panembahan Senopati",
+        "content": "Kerajaan Mataram Islam didirikan pada akhir abad ke-16 oleh Panembahan Senopati. Kerajaan ini mencapai puncak kejayaannya pada masa Sultan Agung Hanyokrokusumo.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2023-12-25",
+        "category": "Kerajaan Majapahit",
+        "author": "Prof. Merle Ricklefs"
+      },
+      {
+        "id": 7,
+        "title": "ERA REFORMASI INDONESIA",
+        "excerpt": "Perubahan besar dalam sistem politik Indonesia pasca Orde Baru",
+        "content": "Era Reformasi dimulai pada tahun 1998 setelah jatuhnya rezim Orde Baru. Periode ini ditandai dengan demokratisasi dan kebebasan pers.",
+        "image": "/placeholder.svg?height=200&width=300",
+        "date": "2023-12-20",
+        "category": "Reformasi",
+        "author": "Prof. Arief Budiman"
+      }
+    ]
+  }
